@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #18251f; background: #f4f7f4; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 18% 12%, #e4f1e6 0, transparent 35%), #f4f7f4; }
+.page { min-height: 100vh; display: grid; place-items: center; padding: 28px; }
+.card { width: min(100%, 500px); padding: 42px; border: 1px solid #e6ece7; border-radius: 22px; background: rgba(255,255,255,.94); box-shadow: 0 20px 70px rgba(36,65,45,.09); }
+.eyebrow { color: #4b9460; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+h1 { margin: 13px 0 8px; font: 800 30px 'Manrope', sans-serif; letter-spacing: -.04em; }
+.intro { margin: 0 0 30px; color: #77827b; font-size: 14px; }
+form { display: flex; flex-direction: column; }
+label { margin: 0 0 9px; font-size: 13px; font-weight: 700; }
+select, textarea { width: 100%; border: 1px solid #dfe7e1; border-radius: 10px; background: #fbfcfb; color: #26332b; font: inherit; outline: none; transition: border .15s, box-shadow .15s; }
+select { height: 48px; padding: 0 13px; margin-bottom: 23px; }
+textarea { min-height: 112px; resize: vertical; padding: 13px; line-height: 1.5; }
+select:focus, textarea:focus { border-color: #67a879; box-shadow: 0 0 0 3px rgba(73,151,94,.12); }
+textarea::placeholder { color: #a1aaa4; }
+.counter { align-self: flex-end; margin: 6px 1px 21px; color: #929c95; font-size: 11px; }
+button { height: 48px; border: 0; border-radius: 10px; background: #287744; color: white; font: 700 14px 'DM Sans', sans-serif; cursor: pointer; transition: background .15s, transform .15s; }
+button span { margin-left: 6px; }
+button:hover:not(:disabled) { background: #1f6338; transform: translateY(-1px); }
+button:disabled { cursor: not-allowed; opacity: .55; }
+.feedback { margin: 18px 0 0; padding: 12px 14px; border-radius: 9px; font-size: 13px; line-height: 1.5; }
+.success { color: #24643a; background: #ecf7ee; }
+.error { color: #a33f36; background: #fff0ee; }
+@media (max-width: 480px) { .page { padding: 16px; } .card { padding: 30px 23px; } h1 { font-size: 26px; } }
